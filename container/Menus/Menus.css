@@ -1,0 +1,80 @@
+.menu__bg {
+    position: relative;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: black;
+    background-image: url('../../assets/dessert.jpg'); /* Default background image */
+  }
+
+  
+  .menu__bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(0);
+    transition: filter 0.3s ease;
+  }
+  
+  .menu__bg:hover::before {
+    filter: blur(100px); /* Adjust the blur amount as needed */
+  }
+  
+  .section {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .section__wrapper {
+    position: relative;
+  }
+  
+  .section:hover  {
+    background-color: var(--color-black) ;/* Adjust the background color and opacity as needed */
+    backdrop-filter: blur(100px); /* Adjust the blur amount as needed */
+  }
+.menu__wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 50vh;
+    
+}
+
+.section {
+    position: relative;
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 6px;
+    background-color: gray;
+  }
+  
+  .section__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-right: 50pt;
+    margin-left: 50pt;
+    text-align: center;
+  }
+  

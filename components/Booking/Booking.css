@@ -1,0 +1,116 @@
+.app__booking {
+   background-color: var(--color-black);
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   padding-top: 10%;
+   padding-bottom: 10%;
+}
+
+app__booking-form_wrapper{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.app__forms{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+app__booking-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+.app__booking-form_name select {
+    width: 380px;
+    height: 60px;
+    background-color: black;
+    color: white;
+    border: 1px solid gray;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .app__booking-form_name input {
+    width: 380px;
+    height: 60px;
+    background-color: black;
+    color: white;
+    border: 1px solid gray;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .custom-datepicker {
+    width: 380px;
+    height: 60px;
+    background-color: black;
+    color: white;
+    border: 1px solid gray;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 2px;
+  }
+  
+  app__booking-form2 {
+    padding-top: 10px;
+    margin-top: 10pt;
+  }
+
+  .app__forms{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .inputs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 3%;
+
+  }
+
+  .btn{
+    margin-top: 30pt;
+  }
+  .popup{
+    margin-top: 30pt;
+  }
+
+
+  @media screen and (max-width: 1100px) {
+    .inputs{
+      display: flex;
+      flex-direction: column;
+      gap: 20pt;
+      padding-top: 5%;
+    }
+
+
+  }
+
+  @media screen and (max-width: 450px) {
+    .inputs{
+      display: flex;
+      flex-direction: column;
+      gap: 20pt;
+      padding-top: 5%;
+    }
+    app__booking-form_name select{
+      width: 300px;
+    }
+
+  }

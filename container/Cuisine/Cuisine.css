@@ -1,0 +1,64 @@
+.app__cuisine {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background: var(--color-black);
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+  
+  .app__cuisine-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+  }
+  
+  .app__cuisine-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  
+  .app__cuisine-images img {
+    width: 28%;
+    animation: rotateImage 8s linear infinite;
+  }
+  
+  @keyframes rotateImage {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @media screen and (max-width: 650px) {
+    .app__cuisine-images {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 50px;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 3rem;
+      margin-top: 3rem;
+      padding-left: 4rem;
+      padding-right: 4rem;
+    }
+    .app__cuisine-images img {
+      width: 80%;
+      animation: rotateImage 8s linear infinite;
+    }
+  }

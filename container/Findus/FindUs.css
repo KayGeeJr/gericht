@@ -1,0 +1,12 @@
+.app__find{
+    background: url('../../assets/bg.png')
+}
+
+
+
+@media screen and (max-width: 950px)  {
+    .app__wrapper_info{
+        align-items: center;
+        text-align: center;
+    }
+}

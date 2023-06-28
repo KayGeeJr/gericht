@@ -1,0 +1,33 @@
+.app__numbers{
+    background-color: var(--color-black);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10%;
+    padding-bottom: 10%;
+ 
+
+}
+
+.app__number-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30pt;
+    margin-bottom: 30pt;
+    border-right: 2px solid var(--color-golden);
+}
+
+@media screen and (max-width: 950px) {
+
+    .app__numbers{
+        background-color: var(--color-black);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+   
+}

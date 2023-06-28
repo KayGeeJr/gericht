@@ -1,0 +1,31 @@
+.app__gallery {
+    background-color: black;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .app__galery-head {
+    text-align: center;
+    align-items: center;
+  }
+  
+  .gallery__container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 3%;
+    padding-right: 5%;
+   
+  }
+  
+  .gallery__item {
+    width: 33%;
+    padding: 10px;
+    box-sizing: border-box;
+    cursor:pointer;
+  }
+  .image{
+    border: 1px solid var(--color-golden);
+    max-height: 400px;
+  }
